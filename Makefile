@@ -1,5 +1,4 @@
-build:
-	 clang *.c -o clox
+CFLAGS=-Werror -Wall -g -O2
 
-run: build
-	./clox
+clox:
+	$(CC) $(CFLAGS) -o clox *.c
